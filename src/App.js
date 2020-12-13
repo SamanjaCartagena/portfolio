@@ -8,6 +8,7 @@ function App() {
     <div className="App">
      <h1>Samanja</h1>
      <p>weuhkfgkjsdhgfjsdagfjgdsfjhgsjdhfgjshdgfjhdsgfjhsdgfjhg</p>
+     <p>Port changed to 80</p>
      
     </div>
   );
