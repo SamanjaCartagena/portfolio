@@ -13,5 +13,20 @@
   z-index: 1;
   width:fill;
   
-  margin-top: 100px;
+}
+.devLogo{
+  color:white;
+  position:relative;
+  z-index: 2;
+  text-align: center;
+   bottom:10px;
+  font-size: 40px;
+  
+}
+.lineRules{
+  width: 80%;
+  position: relative;
+  bottom:2px;
+  z-index: 1;
+  
 }
