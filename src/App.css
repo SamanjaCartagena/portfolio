@@ -1,15 +1,19 @@
 .App {
   text-align: center;
   background-image: -webkit-linear-gradient( black 20%, #017102);
+  background-size: auto;
   padding:0;
   margin:0;
   border: 0;
-  height: 1000px;
+  height: 1300px;
   width:auto;
+  bottom: 10px;
+  z-index: 0;
 
 }
 .samanjaName{
-  position: absolute;
+  position: relative;
+  
   z-index: 1;
   width:fill;
   
@@ -21,6 +25,7 @@
   text-align: center;
    bottom:10px;
   font-size: 40px;
+  padding: 10px;
   
 }
 .lineRules{
