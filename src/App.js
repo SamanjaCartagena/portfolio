@@ -90,7 +90,6 @@ export class App extends Component {
        </td>
        </tr>
        </table>
-       <Introduction/>
        
 
         </div>

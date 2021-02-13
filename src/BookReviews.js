@@ -24,7 +24,7 @@ export class BookReviews extends Component {
     console.log("===========================");
     }
     fetchAdvice2= () =>{
-        axios.get(`https://api.nytimes.com/svc/books/v3/reviews.json?title=Becoming&api-key=RQOqil03Y7fkaSYiZXF77VT1XO3Vu8Ok
+        axios.get(`https://api.nytimes.com/svc/books/v3/reviews.json?title=${this.state.bookValue}&api-key=RQOqil03Y7fkaSYiZXF77VT1XO3Vu8Ok
         `)
         
         .then((response)=>{
