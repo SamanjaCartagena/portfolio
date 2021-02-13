@@ -69,10 +69,10 @@ export class App extends Component {
         <SamanjaLogo/>
         <hr/>
         <div className="nytInputs" style={{padding:'10px'}}> 
-        <table style={{position:'relative', left:'30%',}}>
+        <table style={{position:'relative', left:'20%', width:'60%'}}>
        <tr>
          <td>
-         <input style={{width:'600px', margin:'5px', padding:'5px'}} type="text" value={this.state.value} onChange={this.search} placeholder="Search The New York Times articles.. "/>
+         <input style={{width:'60%', margin:'5px', padding:'5px'}} type="text" value={this.state.value} onChange={this.search} placeholder="Search The New York Times articles.. "/>
         <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102', color:'white', border:'1px solid white'}} onClick={this.searching}>Submit</button>
         </td>
         </tr>

@@ -47,7 +47,7 @@ export class BookReviews extends Component {
         return (
             <div style={{position:'relative'}}>
 
-                <input style={{width:'600px', margin:'5px', padding:'5px'}} type="text" value={this.state.bookValue} onChange={this.searchBooks} placeholder="Search The New York Times for Book Reviews.. "/>
+                <input style={{width:'60%', margin:'5px', padding:'5px'}} type="text" value={this.state.bookValue} onChange={this.searchBooks} placeholder="Search The New York Times for Book Reviews.. "/>
                 <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102', color:'white', border:'1px solid white'}} onClick={this.bookSubmit} >Submit</button>
                 <h3 > <a style={{color:'white'}} target='_blank' href={this.state.book1Url}>{this.state.book1Title}{this.state.book1Author}<br/>{this.state.book1Summary}</a></h3>
             </div>

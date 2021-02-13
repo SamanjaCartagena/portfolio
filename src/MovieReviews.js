@@ -45,7 +45,7 @@ export class MovieReviews extends Component {
         return (
             <div style={{position:'relative'}}>
 
-                <input style={{width:'600px', margin:'5px', padding:'5px'}} type="text" value={this.state.movieValue} onChange={this.searchMovies} placeholder="Search The New York Times for Movie Reviews.. "/>
+                <input style={{width:'60%', margin:'5px', padding:'5px'}} type="text" value={this.state.movieValue} onChange={this.searchMovies} placeholder="Search The New York Times for Movie Reviews.. "/>
                 <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102', color:'white', border:'1px solid white'}} onClick={this.movieSubmit} >Submit</button>
                  <a style={{color:'white'}} target='_blank' href={this.state.movie1Url}>{this.state.movie1Title}<br/>{this.state.movie1Summary}</a>
             </div>
