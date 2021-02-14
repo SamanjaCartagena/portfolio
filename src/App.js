@@ -94,7 +94,9 @@ export class App extends Component {
        </td>
        </tr>
        </table>
-       <table style={{ width:'85%',position:'relative',left:'7%'}}>
+       <center>
+       <div style={{justify:'center'}}>
+       <table style={{ width:'80%',alignContent:'center', alignItems:'center'}}>
          {/**<tr style={{ width:'100%'}}>
            <td>
              <ReactPlayer url="https://youtu.be/p8KbhbG4FnI"/>
@@ -114,24 +116,24 @@ export class App extends Component {
          </tr>
 
     <br/>**/}
-         <tr style={{ width:'100%'}}>
+         <tr style={{ width:'60%'}}>
            <td>
-             <ReactPlayer url="https://youtu.be/qGeateI0NsQ"/>
+             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
 
            </td>
-           <td>
+           <td style={{}}>
            <h3 style={{color:'white'}}>Building search filters</h3>
            <p>Please check out my blog on search filters</p>
            <a style={{color:'white', textDecoration:'underline'}} target="_blank" href="https://samchowdhury.medium.com/javascript-functions-map-filter-reduce-ed463fc47e49">JavaScript Map, Filter, Reduce</a>
-           <Spinner/>
            </td>
            <td >
-           <ReactPlayer url="https://youtu.be/jcnPVPK1Qe8"/>
+           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
            </td>
          </tr>
          
        </table>
-      
+      </div>
+      </center>
         </div>
       </div>
     )
