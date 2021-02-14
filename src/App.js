@@ -122,10 +122,8 @@ export class App extends Component {
 
            </td>
            <td style={{}}>
-           <h3 style={{color:'white'}}>Building search filters</h3>
-           <p>Please check out my blog on search filters</p>
-           <a style={{color:'white', textDecoration:'underline'}} target="_blank" href="https://samchowdhury.medium.com/javascript-functions-map-filter-reduce-ed463fc47e49">JavaScript Map, Filter, Reduce</a>
-           </td>
+            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+            </td>
            <td >
            <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
            </td>
