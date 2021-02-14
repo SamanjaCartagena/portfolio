@@ -95,39 +95,123 @@ export class App extends Component {
        </tr>
        </table>
        <center>
+         <Introduction/>
        <div style={{justify:'center'}}>
        <table style={{ width:'80%',alignContent:'center', alignItems:'center'}}>
-         {/**<tr style={{ width:'100%'}}>
-           <td>
-             <ReactPlayer url="https://youtu.be/p8KbhbG4FnI"/>
-
-           </td>
-           <td>
-           <h3 style={{color:'white'}}>Building a chat app using Socket.io</h3>
-           <h3 style={{color:'white'}}>Building a chat app using Firestore</h3>
-
-           <p>Please check out my chat app in Google Play and Apple Play Store</p>
-           <a className="allLinks" href="https://play.google.com/store/apps/details?id=com.samanja.shoply">Astoria Chat for Google Play</a><br/>
-           <a className="allLinks" href="https://play.google.com/store/apps/details?id=com.samanja.shoply">Astoria Chat for Apple Store</a>
-           </td>
-           <td >
-           <ReactPlayer url="https://youtu.be/p8KbhbG4FnI"/>
-           </td>
-         </tr>
-
-    <br/>**/}
-         <tr style={{ width:'60%'}}>
+       <tr style={{ width:'60%'}}>
            <td>
              <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
-
+             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
            </td>
            <td style={{}}>
             <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
             </td>
            <td >
            <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
+           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
            </td>
          </tr>
+         
+         <tr style={{ width:'60%'}}>
+           <td>
+             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
+             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+           </td>
+           <td style={{}}>
+            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
+            </td>
+           <td >
+           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
+           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
+           </td>
+         </tr>
+         <tr style={{ width:'60%'}}>
+           <td>
+             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
+             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+           </td>
+           <td style={{}}>
+            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
+            </td>
+           <td >
+           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
+           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
+           </td>
+         </tr>
+         <tr style={{ width:'60%'}}>
+           <td>
+             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
+             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+           </td>
+           <td style={{}}>
+            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
+            </td>
+           <td >
+           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
+           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
+           </td>
+         </tr>
+         <tr style={{ width:'60%'}}>
+           <td>
+             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
+             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+           </td>
+           <td style={{}}>
+            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
+            </td>
+           <td >
+           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
+           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
+           </td>
+         </tr>
+         <tr style={{ width:'60%'}}>
+           <td>
+             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
+             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+           </td>
+           <td style={{}}>
+            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
+            </td>
+           <td >
+           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
+           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
+           </td>
+         </tr>
+         <tr style={{ width:'60%'}}>
+           <td>
+             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
+             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+           </td>
+           <td style={{}}>
+            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
+            </td>
+           <td >
+           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
+           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+
+           </td>
+         </tr>
+         
          
        </table>
       </div>

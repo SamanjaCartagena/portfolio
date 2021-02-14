@@ -1,11 +1,12 @@
 .App {
   text-align: center;
   background-image: -webkit-linear-gradient( black 20%, #017102);
+  
   background-size: 100%;
   padding:0;
   margin:0;
   border: 0;
-  height: 1300px;
+  height: fill;
   width:fill;
   bottom: 10px;
   z-index: 0;
@@ -42,4 +43,5 @@ height:60%;
 }
 .allLinks{
   color:white;
+  
 }
