@@ -7,7 +7,9 @@ import SamanjaLogo from './SamanjaLogo';
 import MovieReviews from './MovieReviews';
 import Introduction from './Introduction';
 import BookReviews from './BookReviews';
-
+import ReactPlayer from 'react-player';
+import breakingBad from './img/breakingBad.gif'
+import Spinner from'./img/Spinner';
 export class App extends Component {
   
   constructor(props){
@@ -68,6 +70,8 @@ export class App extends Component {
       <div className="App">
         <SamanjaLogo/>
         <hr/>
+        <h3 style={{color:'white'}}>The Search Engines has been connected to the New York Times API to initiate search for the right New York Times material</h3>
+
         <div className="nytInputs" style={{padding:'10px'}}> 
         <table style={{position:'relative', left:'20%', width:'60%'}}>
        <tr>
@@ -79,7 +83,7 @@ export class App extends Component {
         
       <a style={{color:'white'}} target='_blank' href={this.state.firstNewsUrl}>{this.state.firstNewsAbstract}</a>
        <a style={{color:'white'}} target='_blank' href={this.state.secondNewsUrl}> {this.state.secondNewsAbstract}</a>
-        <a style={{color:'white'}} target='_blank' href={this.state.thirdNewsUrl}> {this.state.thirdNewsAbstract}</a>
+        <a style={{color:'white'}} target='_blank' href={this.state.thirdNewsUrl}>{this.state.thirdNewsAbstract}</a>
        <tr><td>
          <MovieReviews/>
 </td>
@@ -90,8 +94,39 @@ export class App extends Component {
        </td>
        </tr>
        </table>
-       
+       <table style={{ width:'85%',position:'relative',left:'7%'}}>
+         <tr style={{ width:'100%'}}>
+           <td>
+             <ReactPlayer url="https://youtu.be/p8KbhbG4FnI"/>
 
+           </td>
+           <td>
+           <h3 style={{color:'white'}}>Building a chat app using Socket.io</h3>
+
+           </td>
+           <td >
+           <ReactPlayer url="https://youtu.be/p8KbhbG4FnI"/>
+           </td>
+         </tr>
+         <br/>
+         <tr style={{ width:'100%'}}>
+           <td>
+             <ReactPlayer url="https://youtu.be/qGeateI0NsQ"/>
+
+           </td>
+           <td style={{border:'1px solid white'}}>
+           <h3 style={{color:'white'}}>Building search filters</h3>
+           <p>Please check out my blog on search filters</p>
+           <a style={{color:'white', textDecoration:'underline'}} target="_blank" href="https://samchowdhury.medium.com/javascript-functions-map-filter-reduce-ed463fc47e49">JavaScript Map, Filter, Reduce</a>
+
+           </td>
+           <td >
+           <ReactPlayer url="https://youtu.be/jcnPVPK1Qe8"/>
+           </td>
+         </tr>
+         
+       </table>
+      
         </div>
       </div>
     )

@@ -9,6 +9,7 @@
   width:fill;
   bottom: 10px;
   z-index: 0;
+  color:white;
 
 }
 .samanjaName{
@@ -24,7 +25,6 @@
   z-index: 2;
   text-align: center;
    bottom:10px;
-  font-size: 40px;
   padding: 10px;
   
 }
@@ -34,4 +34,9 @@
   bottom:2px;
   z-index: 1;
   
+}
+.videosTable td{
+ margin:5px;
+width:40%;
+height:60%;
 }

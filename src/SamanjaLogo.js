@@ -4,7 +4,7 @@ export class SamanjaLogo extends Component {
     render() {
         return (
             <div className="devLogo">
-                <p>Samanja.dev</p>
+                <p style={{fontSize:'40px'}}>Samanja.dev</p>
             </div>
         )
     }
