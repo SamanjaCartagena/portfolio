@@ -95,30 +95,35 @@ export class App extends Component {
        </tr>
        </table>
        <table style={{ width:'85%',position:'relative',left:'7%'}}>
-         <tr style={{ width:'100%'}}>
+         {/**<tr style={{ width:'100%'}}>
            <td>
              <ReactPlayer url="https://youtu.be/p8KbhbG4FnI"/>
 
            </td>
            <td>
            <h3 style={{color:'white'}}>Building a chat app using Socket.io</h3>
+           <h3 style={{color:'white'}}>Building a chat app using Firestore</h3>
 
+           <p>Please check out my chat app in Google Play and Apple Play Store</p>
+           <a className="allLinks" href="https://play.google.com/store/apps/details?id=com.samanja.shoply">Astoria Chat for Google Play</a><br/>
+           <a className="allLinks" href="https://play.google.com/store/apps/details?id=com.samanja.shoply">Astoria Chat for Apple Store</a>
            </td>
            <td >
            <ReactPlayer url="https://youtu.be/p8KbhbG4FnI"/>
            </td>
          </tr>
-         <br/>
+
+    <br/>**/}
          <tr style={{ width:'100%'}}>
            <td>
              <ReactPlayer url="https://youtu.be/qGeateI0NsQ"/>
 
            </td>
-           <td style={{border:'1px solid white'}}>
+           <td>
            <h3 style={{color:'white'}}>Building search filters</h3>
            <p>Please check out my blog on search filters</p>
            <a style={{color:'white', textDecoration:'underline'}} target="_blank" href="https://samchowdhury.medium.com/javascript-functions-map-filter-reduce-ed463fc47e49">JavaScript Map, Filter, Reduce</a>
-
+           <Spinner/>
            </td>
            <td >
            <ReactPlayer url="https://youtu.be/jcnPVPK1Qe8"/>
