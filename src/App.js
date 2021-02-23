@@ -16,7 +16,7 @@ export class App extends Component {
   constructor(props){
     super(props);
     this.state={firstNewsUrl:''};
-    this.state={firstNewsAbstract:'1.'};
+    this.state={firstNewsAbstract:''};
     this.state={secondNewsUrl: ''};
     this.state={secondNewsAbstract:''};
     this.state={thirdNewsUrl:''};
@@ -38,14 +38,16 @@ export class App extends Component {
   searching=(event)=>{
     event.preventDefault();
     
-    this.fetchAdvice();
+    this.fetchNews();
 
     console.log('Searching NY Times');
     console.log("===========================");
   }
-  fetchAdvice= () =>{
-    axios.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${this.state.value}&api-key=RQOqil03Y7fkaSYiZXF77VT1XO3Vu8Ok`)
+  fetchNews= () =>{
+    axios.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${this.state.value}&api-key=YOUR API KEY`)
     .then((response)=>{
+      const testing= response.data;
+      console.log(testing);
       const headlines1= response.data.response.docs[0].web_url;
       const headlinesAbstract= response.data.response.docs[0].abstract;
       const headlinesUrl= response.data.response.docs[1].web_url;
