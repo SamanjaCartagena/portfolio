@@ -44,7 +44,7 @@ export class App extends Component {
     console.log("===========================");
   }
   fetchNews= () =>{
-    axios.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${this.state.value}&api-key=YOUR API KEY`)
+    axios.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${this.state.value}&api-key=RQOqil03Y7fkaSYiZXF77VT1XO3Vu8Ok`)
     .then((response)=>{
       const testing= response.data;
       console.log(testing);

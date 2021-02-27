@@ -13,19 +13,20 @@ export class Videos extends Component {
                <p>Working with Breaking Bad API</p>
              <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
              <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+             <p>React JS, JavaScript</p>
            </td>
            <td style={{}}>
                <p>Working with New York Times API</p>
             <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/portfolio/tree/master/src">Github Repo</a>
-
+            <p>React JS, JavaScript</p>
             </td>
            <td >
            <p>Building a JSON search filter</p>
 
            <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
            <a target="_blank" className="allLinks" href="">Github Repo</a>
-
+           <p>React JS, JavaScript</p>
            </td>
          </tr>
          
@@ -34,6 +35,7 @@ export class Videos extends Component {
                <p>Playing around with the Pokemon API</p>
              <ReactPlayer playing width='80%'  url="https://www.youtube.com/watch?v=hmFRp6e_cDY&feature=youtu.be"/>
              <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/pokemonNames">Github Repo</a>
+             <p>React JS, JavaScript</p>
            </td>
            <td style={{}}>
             <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
