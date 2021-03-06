@@ -14,7 +14,7 @@ function Videos() {
                 <Grid container direction="column">
      
      <Grid item container spacing={2}>
-       <Grid item xs={0} sm={3} >
+       <Grid item xs={0} sm={0} md={3} lg={4}>
        <Card>
 
       <CardContent>
@@ -28,7 +28,7 @@ function Videos() {
        </Card>
        </Grid>
 
-       <Grid item xs={0} sm={3} >
+       <Grid item xs={0} sm={0} md={3} lg={4}>
        <Card>
 
       <CardContent>
@@ -42,7 +42,7 @@ function Videos() {
        </Card>
        </Grid>
 
-       <Grid item xs={0} sm={3} >
+       <Grid item xs={0} sm={0} md={3} lg={4}>
        <Card>
 
       <CardContent>
@@ -55,7 +55,7 @@ function Videos() {
 
        </Card>
        </Grid>
-       <Grid item xs={0} sm={3} >
+       <Grid item xs={0} sm={0} md={3} lg={4}>
        <Card>
 
       <CardContent>

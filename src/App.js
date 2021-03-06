@@ -100,6 +100,11 @@ export class App extends Component {
        <center>
          <Introduction/>
          <br/>
+         <input type="text" placeholder="Search for projects in JAVA, JavaScript, React JS, Machine Learning, Python etc.." style={{ width:'60%', margin:'5px', padding:'5px'}}/>     
+            <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102', color:'white', border:'1px solid white'}} >Submit</button>
+
+         <br/>
+         <br/>
        <Videos/>
       </center>
         </div>
