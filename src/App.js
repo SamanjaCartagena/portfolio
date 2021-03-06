@@ -99,6 +99,7 @@ export class App extends Component {
        </table>
        <center>
          <Introduction/>
+         <br/>
        <Videos/>
       </center>
         </div>

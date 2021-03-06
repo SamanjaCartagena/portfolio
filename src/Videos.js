@@ -1,142 +1,82 @@
 import React, { Component } from 'react'
 import ReactPlayer from 'react-player';
+import useStyles from './styles';
+import {Card, CardMedia, CardContent, CardActions, Typography, IconButton, Grid} from '@material-ui/core';
 
-export class Videos extends Component {
-    render() {
+import CardHeader from '@material-ui/core/CardHeader';
+
+function Videos() {
+  
+      const classes = useStyles();
+
         return (
-            <div>
-                <center>
-                <div style={{justify:'center'}}>
-       <table style={{ width:'80%',alignContent:'center', alignItems:'center'}}>
-       <tr style={{ width:'60%'}}>
-           <td>
-               <p>Working with Breaking Bad API</p>
-             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
-             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
-             <p>React JS, JavaScript</p>
-           </td>
-           <td style={{}}>
-               <p>Working with New York Times API</p>
-            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
-            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/portfolio/tree/master/src">Github Repo</a>
-            <p>React JS, JavaScript</p>
-            </td>
-           <td >
-           <p>Building a JSON search filter</p>
+            <>
+                <Grid container direction="column">
+     
+     <Grid item container spacing={2}>
+       <Grid item xs={0} sm={3} >
+       <Card>
 
-           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
-           <a target="_blank" className="allLinks" href="">Github Repo</a>
-           <p>React JS, JavaScript</p>
-           </td>
-         </tr>
-         
-         <tr style={{ width:'60%'}}>
-           <td>
-               <p>Playing around with the Pokemon API</p>
-             <ReactPlayer playing width='80%'  url="https://www.youtube.com/watch?v=hmFRp6e_cDY&feature=youtu.be"/>
-             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/pokemonNames">Github Repo</a>
-             <p>React JS, JavaScript</p>
-           </td>
-           <td style={{}}>
-            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
-            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+      <CardContent>
+      <Typography>News App with React JS, JavaScript</Typography>
 
-            </td>
-           <td >
-           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
-           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+       <Typography><a href="">Github Repo</a></Typography>
 
-           </td>
-         </tr>
-         <tr style={{ width:'60%'}}>
-           <td>
-             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
-             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
-           </td>
-           <td style={{}}>
-            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
-            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+       </CardContent>
 
-            </td>
-           <td >
-           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
-           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+       </Card>
+       </Grid>
 
-           </td>
-         </tr>
-         <tr style={{ width:'60%'}}>
-           <td>
-             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
-             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
-           </td>
-           <td style={{}}>
-            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
-            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+       <Grid item xs={0} sm={3} >
+       <Card>
 
-            </td>
-           <td >
-           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
-           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+      <CardContent>
+      <Typography>News App with React JS, JavaScript</Typography>
 
-           </td>
-         </tr>
-         <tr style={{ width:'60%'}}>
-           <td>
-             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
-             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
-           </td>
-           <td style={{}}>
-            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
-            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+       <Typography><a href="">Github Repo</a></Typography>
 
-            </td>
-           <td >
-           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
-           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+       </CardContent>
 
-           </td>
-         </tr>
-         <tr style={{ width:'60%'}}>
-           <td>
-             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
-             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
-           </td>
-           <td style={{}}>
-            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
-            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+       </Card>
+       </Grid>
 
-            </td>
-           <td >
-           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
-           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+       <Grid item xs={0} sm={3} >
+       <Card>
 
-           </td>
-         </tr>
-         <tr style={{ width:'60%'}}>
-           <td>
-             <ReactPlayer playing width='80%'  url="https://youtu.be/qGeateI0NsQ"/>
-             <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
-           </td>
-           <td style={{}}>
-            <ReactPlayer playing width='80%' url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
-            <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+      <CardContent>
+      <Typography>News App with React JS, JavaScript</Typography>
 
-            </td>
-           <td >
-           <ReactPlayer playing width='80%' url="https://youtu.be/jcnPVPK1Qe8"/>
-           <a target="_blank" className="allLinks" href="https://github.com/SamanjaCartagena/breakingBad">Github Repo</a>
+       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+       <Typography><a href="">Github Repo</a></Typography>
 
-           </td>
-         </tr>
-         
-         
-       </table>
-      </div>
-      </center>
+       </CardContent>
+
+       </Card>
+       </Grid>
+       <Grid item xs={0} sm={3} >
+       <Card>
+
+      <CardContent>
+      <Typography>News App with React JS, JavaScript</Typography>
+
+       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+       <Typography><a href="">Github Repo</a></Typography>
+
+       </CardContent>
+
+       </Card>
+       </Grid>
+
+
+       </Grid>
+     </Grid>
                 
-            </div>
+                
+            </>
         )
-    }
+    
 }
 
 export default Videos
