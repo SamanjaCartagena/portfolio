@@ -11,6 +11,9 @@ import ReactPlayer from 'react-player';
 import breakingBad from './img/breakingBad.gif'
 import Spinner from'./img/Spinner';
 import {ThemeProvider, createMuiTheme} from '@material-ui/core/styles';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import EmailIcon from '@material-ui/icons/Email';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import {Switch, Grid, Paper, Typography, Button} from '@material-ui/core';
 
 import Videos from './Videos';
@@ -108,7 +111,11 @@ export class App extends Component {
         </Grid>
         <Grid container>
           <Grid item xs={12} sm={6} md={4} lg={4}>
-            Tweets
+            <a href="" style={{color:'green', padding:'5px'}}><TwitterIcon /></a>
+            <a href="" style={{color:'green', padding:'5px'}}><EmailIcon /></a>
+            <a href="" style={{color:'green', padding:'5px'}}><GitHubIcon /></a>
+
+
           </Grid>
         <Grid item xs={12} sm={6} md={4} lg={4} style={{}}>
         <SamanjaLogo/>
@@ -131,7 +138,7 @@ export class App extends Component {
         <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102', }} onClick={this.searching}>Submit</button>
         
         </Grid>
-        
+
       <a style={{}} target='_blank' href={this.state.firstNewsUrl}>{this.state.firstNewsAbstract}</a>
        <a style={{}} target='_blank' href={this.state.secondNewsUrl}> {this.state.secondNewsAbstract}</a>
         <a style={{}} target='_blank' href={this.state.thirdNewsUrl}>{this.state.thirdNewsAbstract}</a>
