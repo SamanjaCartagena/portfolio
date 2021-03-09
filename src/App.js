@@ -124,27 +124,26 @@ export class App extends Component {
         <h3 style={{}}>This is a News app connected to the New York Times </h3>
 
         <div className="nytInputs" style={{padding:'10px'}}> 
-        <table style={{position:'relative', left:'20%', width:'60%'}}>
-       <tr>
-         <td>
+        <Grid container>
+          <Grid xs={12} sm={6} md={4} lg={4}>
+      
          <input style={{width:'60%', margin:'5px', padding:'5px'}} type="text" value={this.state.value} onChange={this.search} placeholder="Search The New York Times articles.. "/>
         <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102', }} onClick={this.searching}>Submit</button>
-        </td>
-        </tr>
+        
+        </Grid>
         
       <a style={{}} target='_blank' href={this.state.firstNewsUrl}>{this.state.firstNewsAbstract}</a>
        <a style={{}} target='_blank' href={this.state.secondNewsUrl}> {this.state.secondNewsAbstract}</a>
         <a style={{}} target='_blank' href={this.state.thirdNewsUrl}>{this.state.thirdNewsAbstract}</a>
-       <tr><td>
+        <Grid xs={12} sm={6} md={4} lg={4}>
+
          <MovieReviews/>
-</td>
-       </tr>
-       <tr>
-         <td>
+     </Grid>
+     <Grid xs={12} sm={6} md={4} lg={4}>
+
        <BookReviews />
-       </td>
-       </tr>
-       </table>
+      </Grid>
+</Grid>
        <center>
          <Introduction/>
          <br/>
