@@ -14,22 +14,30 @@ function Videos() {
             <center>
      
      <Grid item container >
-       <Grid item xs={12} sm={6} md={4} lg={3} style={{backgroundColor:'red'}}>
+       <Grid item xs={12} sm={6} md={4} lg={3} style={{}}>
+         <bold><p>React JS, NYT API</p></bold>
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+       <a href="" className="allLinks">Github Repo</a>
 
        </Grid>
 
        <Grid item xs={12} sm={6} md={4} lg={3} >
-       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+         <bold><p>React JS, Breaking Bad API</p></bold>
+       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=qGeateI0NsQ"/>
+       <a href="" className="allLinks">Github Repo</a>
 
        </Grid>
 
        <Grid item xs={12} sm={6} md={4} lg={3} >
-       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+         <bold><p>Chat App, React Redux Socket.io</p></bold>
+       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=p8KbhbG4FnI"/>
+       <a href="" className="allLinks">Github Repo</a>
 
        </Grid>
        <Grid item xs={12} sm={6} md={4} lg={3}>
-       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
+         <bold><p>React JS, Pockmon API pokedex</p></bold>
+       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=hmFRp6e_cDY"/>
+       <a href="" className="allLinks">Github Repo</a>
 
        </Grid>
 
