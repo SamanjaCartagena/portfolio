@@ -87,6 +87,7 @@ export class App extends Component {
     const darkTheme = createMuiTheme({
       palette:{
         type:'dark',
+        
       },
     });
     const lightTheme = createMuiTheme({
