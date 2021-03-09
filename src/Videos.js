@@ -11,69 +11,32 @@ function Videos() {
 
         return (
             <>
-                <Grid container direction="column">
+            <center>
      
      <Grid item container spacing={2}>
-       <Grid item xs={0} sm={0} md={3} lg={4}>
-       <Card>
-
-      <CardContent>
-      <Typography>News App with React JS, JavaScript</Typography>
-
+       <Grid item xs={12} sm={6} md={3}>
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
-       <Typography><a href="">Github Repo</a></Typography>
 
-       </CardContent>
-
-       </Card>
        </Grid>
 
-       <Grid item xs={0} sm={0} md={3} lg={4}>
-       <Card>
-
-      <CardContent>
-      <Typography>News App with React JS, JavaScript</Typography>
-
+       <Grid item xs={12} sm={6} md={3} >
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
-       <Typography><a href="">Github Repo</a></Typography>
 
-       </CardContent>
-
-       </Card>
        </Grid>
 
-       <Grid item xs={0} sm={0} md={3} lg={4}>
-       <Card>
-
-      <CardContent>
-      <Typography>News App with React JS, JavaScript</Typography>
-
+       <Grid item xs={12} sm={6} md={3} >
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
-       <Typography><a href="">Github Repo</a></Typography>
 
-       </CardContent>
-
-       </Card>
        </Grid>
-       <Grid item xs={0} sm={0} md={3} lg={4}>
-       <Card>
-
-      <CardContent>
-      <Typography>News App with React JS, JavaScript</Typography>
-
+       <Grid item xs={12} sm={6} md={3}>
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
-       <Typography><a href="">Github Repo</a></Typography>
 
-       </CardContent>
-
-       </Card>
        </Grid>
 
 
        </Grid>
-     </Grid>
                 
-                
+               </center> 
             </>
         )
     
