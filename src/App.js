@@ -10,9 +10,13 @@ import BookReviews from './BookReviews';
 import ReactPlayer from 'react-player';
 import breakingBad from './img/breakingBad.gif'
 import Spinner from'./img/Spinner';
+import {ThemeProvider, createMuiTheme} from '@material-ui/core/styles';
+import {Switch, Grid, Paper, Typography, Button} from '@material-ui/core';
+
 import Videos from './Videos';
+import { green } from '@material-ui/core/colors';
 export class App extends Component {
-  
+ 
   constructor(props){
     super(props);
     this.state={firstNewsUrl:''};
@@ -23,17 +27,28 @@ export class App extends Component {
     this.state={thirdNewsAbstract:''};
     this.state={value:''};
     this.state={query:''};
+    this.state={darkMode:false};
     this.search= this.search.bind(this);
     this.searching= this.searching.bind(this);
+    this.switched= this.switched.bind(this);
 
   }
+  
   componentDidMount(){
+   
   }
   
   search=(event)=>{
     this.setState({value: event.target.value});
     
     console.log(this.state.value);
+  }
+  switched=(checked)=>{
+    if(!this.state.darkMode)
+    this.setState({darkMode:true});
+    else{
+      this.setState({darkMode:false});
+    }
   }
   searching=(event)=>{
     event.preventDefault();
@@ -67,26 +82,58 @@ export class App extends Component {
       console.log(Error);
     })
   }
-
+ 
   render() {
+    const darkTheme = createMuiTheme({
+      palette:{
+        type:'dark',
+      },
+    });
+    const lightTheme = createMuiTheme({
+      palette:{
+        primary:green,
+        secondary:green,
+      }
+    });
     return (
+      <ThemeProvider theme={this.state.darkMode ? darkTheme : lightTheme}>
+      <Paper>
       <div className="App">
+        <center>
+        <Grid item container direction="column">
+          <Grid style={{backgroundColor:'green'}} item xs={12} md={12} lg={12}>
+       Light Mode<Switch checked={this.state.darkMode} onChange={this.switched}/> Dark Mode
+        </Grid>
+        </Grid>
+        <Grid container>
+          <Grid item xs={12} sm={6} md={4} lg={4}>
+            Tweets
+          </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={4} style={{}}>
         <SamanjaLogo/>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={4} style={{}}>
+          Weather
+        </Grid>
+        
+
+        </Grid>
+  </center>
         <hr/>
-        <h3 style={{color:'white'}}>The Search Engines has been connected to the New York Times API to initiate search for the right New York Times material</h3>
+        <h3 style={{}}>This is a News app connected to the New York Times </h3>
 
         <div className="nytInputs" style={{padding:'10px'}}> 
         <table style={{position:'relative', left:'20%', width:'60%'}}>
        <tr>
          <td>
          <input style={{width:'60%', margin:'5px', padding:'5px'}} type="text" value={this.state.value} onChange={this.search} placeholder="Search The New York Times articles.. "/>
-        <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102', color:'white', border:'1px solid white'}} onClick={this.searching}>Submit</button>
+        <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102', }} onClick={this.searching}>Submit</button>
         </td>
         </tr>
         
-      <a style={{color:'white'}} target='_blank' href={this.state.firstNewsUrl}>{this.state.firstNewsAbstract}</a>
-       <a style={{color:'white'}} target='_blank' href={this.state.secondNewsUrl}> {this.state.secondNewsAbstract}</a>
-        <a style={{color:'white'}} target='_blank' href={this.state.thirdNewsUrl}>{this.state.thirdNewsAbstract}</a>
+      <a style={{}} target='_blank' href={this.state.firstNewsUrl}>{this.state.firstNewsAbstract}</a>
+       <a style={{}} target='_blank' href={this.state.secondNewsUrl}> {this.state.secondNewsAbstract}</a>
+        <a style={{}} target='_blank' href={this.state.thirdNewsUrl}>{this.state.thirdNewsAbstract}</a>
        <tr><td>
          <MovieReviews/>
 </td>
@@ -105,10 +152,12 @@ export class App extends Component {
 
          <br/>
          <br/>
-       <Videos/>
+       <Videos width='100%'/>
       </center>
         </div>
       </div>
+      </Paper>
+      </ThemeProvider>
     )
   }
 }

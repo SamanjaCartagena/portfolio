@@ -13,22 +13,22 @@ function Videos() {
             <>
             <center>
      
-     <Grid item container spacing={2}>
-       <Grid item xs={12} sm={6} md={3}>
+     <Grid item container >
+       <Grid item xs={12} sm={6} md={4} lg={3} style={{backgroundColor:'red'}}>
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
 
        </Grid>
 
-       <Grid item xs={12} sm={6} md={3} >
+       <Grid item xs={12} sm={6} md={4} lg={3} >
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
 
        </Grid>
 
-       <Grid item xs={12} sm={6} md={3} >
+       <Grid item xs={12} sm={6} md={4} lg={3} >
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
 
        </Grid>
-       <Grid item xs={12} sm={6} md={3}>
+       <Grid item xs={12} sm={6} md={4} lg={3}>
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
 
        </Grid>
