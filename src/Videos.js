@@ -13,7 +13,7 @@ function Videos() {
             <>
             <center>
      
-     <Grid item container >
+     <Grid item container direction="row">
        <Grid item xs={12} sm={6} md={4} lg={3} style={{}}>
          <bold><p>React JS, NYT API</p></bold>
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
@@ -32,6 +32,12 @@ function Videos() {
          <bold><p>Chat App, React Redux Socket.io</p></bold>
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=p8KbhbG4FnI"/>
        <a href="" className="allLinks">Github Repo</a>
+
+       </Grid>
+       <Grid item xs={12} sm={6} md={4} lg={3}>
+         <bold><p>Netflix Clone with React JS and Firebase</p></bold>
+       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=UP6kpQ5xTR8"/>
+       <a href="https://github.com/SamanjaCartagena/NetflixProject" target="_blank" className="allLinks">Github Repo</a>
 
        </Grid>
        <Grid item xs={12} sm={6} md={4} lg={3}>

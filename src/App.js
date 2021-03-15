@@ -6,7 +6,6 @@ import React, { Component} from 'react'
 import SamanjaLogo from './SamanjaLogo';
 import MovieReviews from './MovieReviews';
 import Introduction from './Introduction';
-import BookReviews from './BookReviews';
 import ReactPlayer from 'react-player';
 import breakingBad from './img/breakingBad.gif'
 import Spinner from'./img/Spinner';
@@ -14,6 +13,7 @@ import {ThemeProvider, createMuiTheme} from '@material-ui/core/styles';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import Divider from '@material-ui/core/Divider';
 import {Switch, Grid, Paper, Typography, Button} from '@material-ui/core';
 
 import Videos from './Videos';
@@ -104,52 +104,51 @@ export class App extends Component {
       <Paper>
       <div className="App">
         <center>
-        <Grid item container direction="column">
+        <Grid item container direction="row">
           <Grid style={{backgroundColor:'green'}} item xs={12} md={12} lg={12}>
        Light Mode<Switch checked={this.state.darkMode} onChange={this.switched}/> Dark Mode
         </Grid>
         </Grid>
-        <Grid container>
-          <Grid item xs={12} sm={6} md={4} lg={4}>
-            <a href="" style={{color:'green', padding:'5px'}}><TwitterIcon /></a>
+        <Grid container  style={{}}>
+
+          <Grid item xs={12} sm={12} md={4} lg={4} style={{}}>
+            <a href="https://twitter.com/Samanja09" target="_blank" style={{color:'green', padding:'5px'}}><TwitterIcon /></a>
             <a href="" style={{color:'green', padding:'5px'}}><EmailIcon /></a>
-            <a href="" style={{color:'green', padding:'5px'}}><GitHubIcon /></a>
+            <a href="https://github.com/SamanjaCartagena" target="_blank" style={{color:'green', padding:'5px'}}><GitHubIcon /></a>
 
 
           </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={4} style={{}}>
+        <Grid item xs={12} sm={12} md={4} lg={4} style={{}}>
         <SamanjaLogo/>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={4} style={{}}>
-          Weather
-        </Grid>
+        <Grid item xs={12} sm={12} md={4} lg={4} style={{}}>
+         {/**  Weather
+   **/
+         }
+</Grid>
         
-
-        </Grid>
+          </Grid>
   </center>
-        <hr/>
-        <h3 style={{}}>This is a News app connected to the New York Times </h3>
+<Divider/>
+        <h3 style={{}}>This is a News app connected to the New York Times API. </h3>
 
         <div className="nytInputs" style={{padding:'10px'}}> 
-        <Grid container>
-          <Grid xs={12} sm={6} md={4} lg={4}>
+        <Grid container style={{padding:'10px'}}>
+          <Grid xs={12} sm={6} md={6} lg={6}>
       
          <input style={{width:'60%', margin:'5px', padding:'5px'}} type="text" value={this.state.value} onChange={this.search} placeholder="Search The New York Times articles.. "/>
-        <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102', }} onClick={this.searching}>Submit</button>
+        <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102',color:'white' }} onClick={this.searching}>Submit</button>
         
         </Grid>
 
       <a style={{}} target='_blank' href={this.state.firstNewsUrl}>{this.state.firstNewsAbstract}</a>
        <a style={{}} target='_blank' href={this.state.secondNewsUrl}> {this.state.secondNewsAbstract}</a>
         <a style={{}} target='_blank' href={this.state.thirdNewsUrl}>{this.state.thirdNewsAbstract}</a>
-        <Grid xs={12} sm={6} md={4} lg={4}>
+        <Grid xs={12} sm={6} md={6} lg={6}>
 
          <MovieReviews/>
      </Grid>
-     <Grid xs={12} sm={6} md={4} lg={4}>
-
-       <BookReviews />
-      </Grid>
+     
 </Grid>
        <center>
          <Introduction/>
