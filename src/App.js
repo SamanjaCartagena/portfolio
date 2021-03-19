@@ -137,7 +137,7 @@ export class App extends Component {
           <Grid xs={12} sm={6} md={6} lg={6}>
       
          <input style={{width:'60%', margin:'5px', padding:'5px'}} type="text" value={this.state.value} onChange={this.search} placeholder="Search The New York Times articles.. "/>
-        <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102',color:'white' }} onClick={this.searching}>Submit</button>
+        <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102',color:'white',border:'1px solid white' }} onClick={this.searching}>Submit</button>
         
         </Grid>
 
