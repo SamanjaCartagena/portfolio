@@ -130,7 +130,7 @@ export class App extends Component {
           </Grid>
   </center>
 <Divider/>
-        <h3 style={{}}>This is a News app connected to the New York Times API. </h3>
+        <h3 style={{}}>Search for free articles from the New York Times </h3>
 
         <div className="nytInputs" style={{padding:'10px'}}> 
         <Grid container style={{padding:'10px'}}>
