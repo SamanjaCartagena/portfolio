@@ -11,7 +11,7 @@ export class Introduction extends Component {
     render() {
         
         return (
-            <div className="Introduction" style={{backgroundColor:'green', padding:'5px'}}>
+            <div className="Introduction" style={{backgroundColor:'#31013e', padding:'5px'}}>
                 <h4 style={{color:'white'}}>Full Stack Developer</h4>
                {/**  <a href="https://www.infinitudex.com/" target="_blank" className="allLinks" style={{color:'white'}}><h4>Founder of InfinitudeX</h4></a>**/}
                 <a href="https://samchowdhury.medium.com/" target="_blank" className="allLinks" style={{color:'white'}}><h4>Author, Blogger, Contributor</h4></a>

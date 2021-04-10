@@ -17,7 +17,7 @@ function Videos() {
        <Grid item xs={12} sm={6} md={4} lg={3} style={{}}>
          <bold><p>React JS, NYT API</p></bold>
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=NLEHdVzik6k"/>
-       <a href="" target="_blank" className="allLinks">Codes N/A</a>
+       <a href="https://levelup.gitconnected.com/build-a-news-app-using-new-york-times-api-and-react-js-38faf2b3585" target="_blank" className="allLinks">Codes</a>
 
        </Grid>
 
@@ -31,7 +31,7 @@ function Videos() {
        <Grid item xs={12} sm={6} md={4} lg={3} >
          <bold><p>Chat App, React Redux Socket.io</p></bold>
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=p8KbhbG4FnI"/>
-       <a href="" className="allLinks">Codes N/A</a>
+       <a className="allLinks">Codes N/A</a>
 
        </Grid>
        <Grid item xs={12} sm={6} md={4} lg={3}>
@@ -55,13 +55,25 @@ function Videos() {
        <Grid item xs={12} sm={6} md={4} lg={3}>
          <bold><p>Simple Frontend with Tailwind CSS</p></bold>
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=98JRThInBQ8"/>
-       <a href="" target="_blank" className="allLinks">Codes N/A</a>
+       <a  target="_blank" className="allLinks">Codes N/A</a>
 
        </Grid>
        <Grid item xs={12} sm={6} md={4} lg={3}>
          <bold><p>Expense Tracker with React JS</p></bold>
        <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=eQHFzcQSiac"/>
-       <a href="" target="_blank" className="allLinks">Codes N/A</a>
+       <a target="_blank" className="allLinks">Codes N/A</a>
+
+       </Grid>
+       <Grid item xs={12} sm={6} md={4} lg={3}>
+         <bold><p>Facebook Auth with React</p></bold>
+       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=sR6qnnjVFlg"/>
+       <a href="https://github.com/SamanjaCartagena/facebookOAuth" target="_blank" className="allLinks">Codes</a>
+
+       </Grid>
+       <Grid item xs={12} sm={6} md={4} lg={3}>
+         <bold><p>Twitter Clone</p></bold>
+       <ReactPlayer  width="90%" url="https://www.youtube.com/watch?v=k-YOigeFOg0"/>
+       <a href="https://github.com/SamanjaCartagena/twitter-clone" target="_blank" className="allLinks">Codes</a>
 
        </Grid>
        </Grid>

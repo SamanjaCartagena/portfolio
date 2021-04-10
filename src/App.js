@@ -17,7 +17,7 @@ import Divider from '@material-ui/core/Divider';
 import {Switch, Grid, Paper, Typography, Button} from '@material-ui/core';
 
 import Videos from './Videos';
-import { green } from '@material-ui/core/colors';
+import {purple} from '@material-ui/core/colors';
 export class App extends Component {
  
   constructor(props){
@@ -95,8 +95,8 @@ export class App extends Component {
     });
     const lightTheme = createMuiTheme({
       palette:{
-        primary:green,
-        secondary:green,
+        primary:purple,
+        secondary:purple,
       }
     });
     return (
@@ -104,40 +104,42 @@ export class App extends Component {
       <Paper>
       <div className="App">
         <center>
-        <Grid item container direction="row">
-          <Grid style={{backgroundColor:'green'}} item xs={12} md={12} lg={12}>
+        <Grid  container direction="row">
+        <Grid  style={{backgroundColor:'#31013e', color:'white'}} item xs={12} sm={12} md={6} lg={6} >
+            <a href="https://twitter.com/Samanja09" target="_blank" style={{color:'white', padding:'5px', position:'relative', top:'5px'}}><TwitterIcon /></a>
+            <a href="" style={{color:'white', padding:'5px', position:'relative', top:'5px'}}><EmailIcon /></a>
+            <a href="https://github.com/SamanjaCartagena" target="_blank" style={{color:'white', padding:'5px', position:'relative', top:'5px'}}><GitHubIcon /></a>
+
+
+          </Grid>
+          <Grid style={{backgroundColor:'#31013e', color:'white'}} item xs={12} sm={12} md={6} lg={6}>
        Light Mode<Switch checked={this.state.darkMode} onChange={this.switched}/> Dark Mode
         </Grid>
         </Grid>
         <Grid container  style={{}}>
 
-          <Grid item xs={12} sm={12} md={4} lg={4} style={{}}>
-            <a href="https://twitter.com/Samanja09" target="_blank" style={{color:'green', padding:'5px'}}><TwitterIcon /></a>
-            <a href="" style={{color:'green', padding:'5px'}}><EmailIcon /></a>
-            <a href="https://github.com/SamanjaCartagena" target="_blank" style={{color:'green', padding:'5px'}}><GitHubIcon /></a>
-
-
-          </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4} style={{}}>
+          
+        <Grid item xs={12} sm={12} md={12} lg={12} style={{}}>
         <SamanjaLogo/>
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4} style={{}}>
-         {/**  Weather
-   **/
-         }
-</Grid>
+        
+
         
           </Grid>
   </center>
 <Divider/>
-        <h3 style={{}}>Search for free articles from the New York Times </h3>
+<Introduction/>
+<div>
+  <h1 style={{fontSize:'50px'}}>Test out some Projects</h1>
+  <Divider/>
+        <h1 style={{fontSize:'30px'}}>Search for free articles from the New York Times </h1>
 
-        <div className="nytInputs" style={{padding:'10px'}}> 
+        <div className="nytInputs" style={{padding:'10px', height:'150px'}}> 
         <Grid container style={{padding:'10px'}}>
           <Grid xs={12} sm={6} md={6} lg={6}>
       
-         <input style={{width:'60%', margin:'5px', padding:'5px'}} type="text" value={this.state.value} onChange={this.search} placeholder="Search The New York Times articles.. "/>
-        <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102',color:'white',border:'1px solid white' }} onClick={this.searching}>Submit</button>
+         <input style={{width:'60%', margin:'5px', padding:'5px', border:'2px solid #31013e'}} type="text" value={this.state.value} onChange={this.search} placeholder="Search The New York Times articles.. "/>
+        <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#31013e',color:'white',border:'1px solid white' }} onClick={this.searching}>Submit</button>
         
         </Grid>
 
@@ -150,8 +152,9 @@ export class App extends Component {
      </Grid>
      
 </Grid>
+</div>
+<Divider/>
        <center>
-         <Introduction/>
          <br/>
          <input type="text" placeholder="Search for projects in JAVA, JavaScript, React JS, Machine Learning, Python etc.." style={{ width:'60%', margin:'5px', padding:'5px'}}/>     
             <button style={{padding:'6px', margin:'3px', position:'relative',backgroundColor:'#017102', color:'white', border:'1px solid white'}} >Submit</button>
