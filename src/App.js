@@ -154,6 +154,34 @@ export class App extends Component {
 </Grid>
 </div>
 <Divider/>
+<center>
+<div style={{width:'100%',  height:'500px'}}>
+  <Grid item container='row' >
+  <Grid style={{height:'500px'}} item xs={12} sm={12} md={9} lg={9}>
+        
+        <ReactPlayer width="100%" height="500px" url="https://www.youtube.com/watch?v=hSF2TMFj2UA"/>
+ 
+        </Grid>
+        <Grid item xs={12} sm={12} md={3} lg={3}>
+        
+        <h2>Salon Ziba</h2>
+        <h3>Created a word press site using Woo commerce for e-commerce and stripe for payment integration</h3>
+        <a href="https://salonziba.com/" target="_blank">
+        <Button>Check it out</Button>
+          </a>
+        </Grid>
+
+
+
+
+  </Grid>
+
+</div>
+
+</center>
+<br/>
+<br/>
+
        <center>
          <br/>
          <input type="text" placeholder="Search for projects in JAVA, JavaScript, React JS, Machine Learning, Python etc.." style={{ width:'60%', margin:'5px', padding:'5px'}}/>     
